@@ -17,12 +17,12 @@ export default {
 
    let powerbi = new pbi.service.Service(pbi.factories.hpmFactory, pbi.factories.wpmpFactory, pbi.factories.routerFactory);
    const dashboardContainer = document.getElementById('container');
-   const dashboard = powerbi.embed(import.meta.env.dashboardContainer, config);
+   const dashboard = powerbi.embed(dashboardContainer, config);
 
    dashboard.off("loaded");
    dashboard.off("rendered");
    dashboard.on("error", function () {
-    this.dashboard.off("error");
+   dashboard.off("error");
    });
   }
  }
