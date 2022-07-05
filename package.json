@@ -10,7 +10,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "pinia": "^2.0.14",
+    "powerbi-client": "^2.21.1",
     "vue": "^3.2.37",
     "vue-router": "^4.0.16"
   },
